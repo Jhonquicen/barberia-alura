@@ -1,0 +1,292 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0; /*esparcimiento externo; 20px para superior e interior y o en los laterales*/
+}
+
+.caja{
+    width: 940px;/*para la pantalla*/
+    position: relative; /*position relative de la position absolute*/
+    margin: 0 auto; /*0 en la parte superior inferior y automatico de derecha a izquierda*/
+}
+
+nav{
+    position: absolute;
+    top: 110px; /*superior*/
+    right: 0px; /*derecha*/
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;/*margen hacia arriba,derecha,abajo y para la izquierda*/
+} /* hacemos referencia al li de la lista */
+
+nav a{
+    text-transform: uppercase;/*para poner las letras en mayuscula*/
+    color: black;
+    font-weight: bold;/*para cambiar el color de la letra */
+    font-size: 22px;
+    text-decoration: none;/*para quitar la linea del link*/
+} /* hacemos referencia a la a del link */
+
+nav a:hover{ /*para darle efecto cuando pasa el mouse*/
+    color: darkorange;
+    text-decoration: underline; /*para subrayar la palabra cuando pasa el mouse*/
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;/*para que me ocupe el 30 % y el otro 10% esta entre los espacios*/
+    vertical-align: top;/*la alineacion de los items sea en la parte superior*/
+    margin: 0 1.5%;
+    padding: 30px 20px; /*arriba y abajo, lados*/
+    box-sizing: border-box;/*para configurar el tamaño de la caja, reorganiza los espacios*/
+    border: 2px solid black;/*border-width, border-style, border-color*/
+    /*border-color: black;
+    border-width: 2px; /*ancho del border, tamaño del borde*/
+    /*border-style: solid;/*una linea solida, para darle estilo a la linea*/
+    border-radius: 10px;
+}
+
+.productos li:hover{ /*para darle efecto cuando pasa el mouse*/
+    border-color: red;
+    
+}
+
+.productos li:active{ /*para cambiar al hacer click*/
+    border-color: blue;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold; /*peso lo definimos con negrita*/
+}
+
+.productos li:hover h2{ /*dentro de productos li cuando pase el mouse hagame el cambio en el h2*/
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px; /*tamaño de letra*/
+    font-weight: bold;
+    margin-top: 10px; /*para darle margen al precio con la descripcion*/
+}
+
+footer{
+    text-align: center;
+    background: url(imagenesBarberia/bg.jpg); /*llamamos la url la imagen para poner de fondo*/
+    padding: 40px;
+}
+
+.Copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0  ;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*all aplica la transicion en todas las propiedades*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: red;
+    transform: scale(1.2); /* aumente 1.20 cuando el mouse se posicione sobr eel elemento*/
+    /*transform: rotate(70deg); para que gire*/
+    /*transform: scale(1.2) rotate(70deg); esta forma es para usar dos veces el transform*/
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold; /*para la letra*/
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/*Aqui inicia el CSS para nuestra home*/
+
+.barberia{
+    width: 100%;
+}
+
+main > p{
+    background: red;
+}
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /*que se aumente 2 veces el tamaño que tiene por defecto*/
+    margin: 0 0 1em; /*que se aumente 1 vez el tamaño que tiene por defecto*/
+    clear: left; /*cualquier configuracion que venga despues del titulo de la izquierda que la elimine*/
+    
+    /*text-shadow: 2px 2px 10px red; para sombrear el texto*/
+}
+
+/*.titulo-principal:first-letter{ /*para modificar la primer letra */
+/*    font-weight: bold;*/
+/*}*/
+
+/*.titulo-principal:before{ /*para poner [ cada que empiece cada titulo principal*/
+/*   content: "[";*/
+/*}
+.titulo-principal:after{ /*para poner ] cuando termine cada titulo principal*/
+/*   content: "]";*/
+/*}
+p:first-line{
+    font-style: italic;
+} */
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;/*float es para redondear y poder poner texto al lado y left es en la posicion izquierda*/
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+    
+    /*box-shadow: inset 0 0 30px red  esto es para una sombra interna*/
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; /*para subir la lista*/
+}
+
+.items{
+    line-height: 1.5; /*altura de linea paracido a la etiqueta em para darle espacio a los items*/
+}
+
+.items:before{
+    content: "🌟";
+}
+
+.items:first-child{ /*el primer hijo o sea para el primer item; para el ultimo hijo es last-child; nth-child() para poner el numero del item a modificar;
+    nth-child(2n) pintamos los numeros pares, cada 2 items lo pintamos; PSEUDO-CLASES*/
+    font-weight: bold; /*para poner en negrilla*/
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    /*box-shadow: 10px 10px 30px 15px #000000, -10px -10px yellow, -15px 10px rgba(50, 50, 50, 0.5); varias sombras*/
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagen-diferenciales:hover{ /*con el hover cuando pasamos el mouse le cambiamos la opacidad*/
+    opacity: 0.3; /*opacidad 0.3 o 30%*/
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen  and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}

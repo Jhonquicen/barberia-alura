@@ -1,0 +1,66 @@
+
+.titulo-principal{
+    padding-left: 30px;
+} /* esparcimiento interno izquierda  */
+
+p{
+    text-align: center;
+}
+
+em strong{ /* para poner el color solo en ese punto */
+    color: red;
+}
+
+#mision{
+    font-size: 20px;
+    background-color: aquamarine;
+}
+
+/* ponemos # para los estilos del id */
+
+.principal{
+    background-color: #cccccc;
+    padding: 20px;
+}
+
+#barberia{
+    
+    width: 100%;
+
+}
+
+.diferenciales{
+    background-color: white;
+    padding: 30px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 20%;/*margen derecha*/
+} /* con display: inline-block podemos poner algo despues del ul*/
+
+.imagenDiferencial{
+    width: 50%;
+}
+
+/* color 
+
+0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F intencidad del color f es mas fuerte
+#000000 es negro por ausencia de color
+#FFFFFF es blanco
+
+r r g g b b
+
+0 = menor
+255 = max
+en forma rgb(0,0,0)*/

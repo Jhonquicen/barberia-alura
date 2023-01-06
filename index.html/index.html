@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- pasar la informaciones para el navegador sobre cualquier version de html -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- utf-8 para decir que vamos a usar ese diccionario -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- <style>
+        p{
+            text-align: center;
+        } /* con esta p le damos el estilo a todas las p */
+    </style> otra opcion de hacer el css-->
+</head>
+
+<body>
+
+
+    <header> <!-- para el encabezado -->
+        <div class="caja">
+            <h1><img src="imagenesBarberia/logo.png"></h1>
+            <nav>
+                <ul class="navegacion">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="mailto:foo@bar.com">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <img class="barberia" src="servicios-salon-barberia.jpeg">
+
+    <main>
+
+        <section class="principal">
+            <h2 style="text-align: center;background-color: #cccccc;font-size: 2em;">Sobre la Barbería Alura</h2> <!-- otra forma de usar el CSS -->
+
+            <img class="utensilios" src="utensilios[1].jpg" alt="Utensilios de un barbero">
+
+            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de
+                mejor
+                para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista
+                nuevos
+                clientes diariamente.</p>
+            <p style="font-size: 20px;text-align: center;"><em>Nuestra misión es: <strong>"Proporcionar autoestima y
+                        calidad
+                        de vida a nuestros clientes"</strong>.</em></p>
+
+            <p id="mision">Ofrecemos profesionales experimentados que están constantemente observando los cambios y
+                movimiento en el mundo
+                de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón
+                de
+                excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+
+        </section>
+        <section class="mapa">
+            <h3 class="titulo-principal">Nuestra Ubicacion</h3>
+            <p>Nuestro establecimiento esta ubicado en el corazon de de la ciudad</p>
+            <div class="mapa-contenido">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15862.876073432499!2d-75.5858772!3d6.30060345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442ec447ff6731%3A0x6c6f7040092dd199!2sEcoparque%20Mirador%20Cerro%20El%20Picacho!5e0!3m2!1ses!2sco!4v1672771871443!5m2!1ses!2sco"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+        <section class="diferenciales">
+
+            <h3 class="titulo-principal">Diferenciales</h3>
+
+            <div class="contenido-diferenciales">
+                <ul class="lista-diferenciales"> <!-- lista ordenada -->
+                    <li class="items">Atencion personalizada a los clientes</li>
+                    <li class="items">Espacio Diferencial</li>
+                    <li class="items">Localizacion</li>
+                    <li class="items">Profesionales calificados</li>
+                    <li class="items">Puntualidad</li>
+                    <li class="items">Limpieza</li>
+                </ul><img src="cortando.jpg" class="imagen-diferenciales">
+            </div>
+
+            <div class="video">
+    
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/4Wf-mZ6plv0"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagenesBarberia/logo-blanco.png">
+        <p class="Copyright">&copy Copyright Barberia Alura - 2020</p>
+        <!-- unicode-table.com para emojis, caracter especial  -->
+    </footer>
+
+
+
+
+    <!-- con style="text-align: center;" para centrar el texto -->
+    <!-- con style="font-size: 20px;" cambiamos el tamaño  -->
+    <!-- <strong> para poner en negrita -->
+    <!-- <em> para poner letra italica-->
+</body>
+
+</html>
